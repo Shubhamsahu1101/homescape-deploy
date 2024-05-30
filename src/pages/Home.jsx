@@ -1,12 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import homeImage1 from '../images/homepage1.jpeg';
+import homeimage from '../images/homepage.jpeg';
 
 const Home = () => {
   return (
     <div className="bg-neutral-100 min-h-screen text-gray-800">
       {/* Hero Section */}
-      <section className="relative bg-cover bg-center h-screen" style={{ backgroundImage: `url(${homeImage1})` }}>
+      <section className="relative bg-cover bg-center h-screen" style={{ backgroundImage: `url(${homeimage})` }}>
         <div className="absolute inset-0 bg-black opacity-50"></div>
         <div className="relative z-10 flex flex-col items-center justify-center h-full text-center text-white">
           <h1 className="text-6xl font-bold mb-4">Your Dream Home Awaits</h1>
