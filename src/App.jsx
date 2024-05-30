@@ -20,7 +20,7 @@ const App = () => {
       <Header />
       <Toaster />
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/homescape-deploy" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/signup" element={<SignUp />} />
         <Route path="/login" element={<Login />} />

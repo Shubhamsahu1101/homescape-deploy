@@ -217,7 +217,7 @@ export default function Search() {
                     )}
                     {loading && (
                         <p className='text-xl text-stone-700 text-center w-full'>
-                            Loading...
+                            Listings can't be loaded, this is a static frontend version.
                         </p>
                     )}
 

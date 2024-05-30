@@ -8,7 +8,7 @@ const Header = () => {
     return (
         <header className='bg-neutral-200 shadow-md'>
             <div className='flex justify-between items-center max-w-full mx-auto p-3 pl-6'>
-                <Link to='/'>
+                <Link to='/homescape-deploy/'>
                     <h1 className=' font-bold text-sm sm:text-4xl flex flex-wrap'>
                         <span className='text-stone-500'>Home</span>
                         <span className='text-stone-700'>Scape</span>
@@ -26,7 +26,7 @@ const Header = () => {
                             Create Listing
                         </li>
                     </Link>
-                    <Link to='/'>
+                    <Link to='/homescape-deploy/'>
                         <li className='hidden sm:inline text-stone-700 hover:opacity-75 font-semibold text-xl'>
                             Home
                         </li>
