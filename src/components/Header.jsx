@@ -44,7 +44,7 @@ const Header = () => {
                                 alt='profile'
                             />
                         ) : (
-                            <li className=' text-stone-700 text-xl hover:underline pr-3'> Sign in</li>
+                            <li className=' text-stone-700 hover:opacity-75 font-semibold text-xl'> Sign in</li>
                         )}
                     </Link>
                 </ul>
