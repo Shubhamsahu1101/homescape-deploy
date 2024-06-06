@@ -20,13 +20,13 @@ const CreateListing = () => {
     offer: false,
     parking: false,
     furnished: false,
-    contact: currentUser.email
+    contact: currentUser.email?? '',  //for deployment on github pages only
   });
   const [uploading, setUploading] = React.useState(false);
   const [loading, setLoading] = React.useState(false);
   const navigate = useNavigate();
 
-  console.log(formData);
+  
 
   const handleChange = (e) => {
 
