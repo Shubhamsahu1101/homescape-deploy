@@ -20,7 +20,7 @@ const CreateListing = () => {
     offer: false,
     parking: false,
     furnished: false,
-    contact: currentUser.email?? '',  //for deployment on github pages only
+    contact: '',  //for deployment on github pages only
   });
   const [uploading, setUploading] = React.useState(false);
   const [loading, setLoading] = React.useState(false);
