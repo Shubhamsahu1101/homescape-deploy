@@ -3,7 +3,8 @@ import { Link } from 'react-router-dom'
 import { useSelector } from 'react-redux'
 
 const Header = () => {
-    const {currentUser} = useSelector((state) => state.user);
+    // const {currentUser} = useSelector((state) => state.user);
+    const currentUser = true;
 
     return (
         <header className='bg-neutral-200 shadow-md'>
@@ -40,7 +41,7 @@ const Header = () => {
                         {currentUser ? (
                             <img
                                 className='rounded-full h-12 w-12 object-cover mr-3'
-                                src={currentUser.avatar}
+                                src={'https://firebasestorage.googleapis.com/v0/b/mern-estate-app-2c62a.appspot.com/o/profilepictures%2F1715950886868-pfp1.jpeg?alt=media&token=bb6d792b-eae2-48b7-bd48-bd49e27ad8dc'}
                                 alt='profile'
                             />
                         ) : (

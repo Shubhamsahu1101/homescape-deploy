@@ -27,9 +27,9 @@ const App = () => {
         <Route path='/search' element={<Search />} />
         <Route path="/create-listing" element={<CreateListing />} />
         <Route path="/my-listings" element={<MyListings />} />
+        <Route path="/profile" element={<Profile />} />
         
         <Route element={<PrivateRoute />} >
-          <Route path="/profile" element={<Profile />} />
           <Route path="/update-listing/:listingId" element={<UpdateListing />} />
         </Route>
 

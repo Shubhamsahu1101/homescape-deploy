@@ -11,10 +11,14 @@ import { app } from '../../firebase'
 const Profile = () => {
   const { currentUser } = useSelector((state) => state.user)
   const [formData, setFormData] = React.useState({
-    username: currentUser.username,
-    email: currentUser.email,
-    password: currentUser.password,
-    avatar: currentUser.avatar,
+    // username: currentUser.username,
+    // email: currentUser.email,
+    // password: currentUser.password,
+    // avatar: currentUser.avatar,
+    username: 'user1',
+    email: 'user1@gmail.com',
+    password: '',
+    avatar: 'https://firebasestorage.googleapis.com/v0/b/mern-estate-app-2c62a.appspot.com/o/profilepictures%2F1715950886868-pfp1.jpeg?alt=media&token=bb6d792b-eae2-48b7-bd48-bd49e27ad8dc',
   });
   const [loading, setLoading] = React.useState(false);
   const dispatch = useDispatch();
@@ -81,18 +85,18 @@ const Profile = () => {
         avatar: newAvatar ? newurl : formData.avatar,
       }
 
-      if (updatedFormData.username === currentUser.username) {
-        delete updatedFormData.username;
-      }
-      if (updatedFormData.email === currentUser.email) {
-        delete updatedFormData.email;
-      }
-      if (updatedFormData.password === '' || formData.password === currentUser.password) {
-        delete updatedFormData.password;
-      }
-      if (updatedFormData.avatar === currentUser.avatar) {
-        delete updatedFormData.avatar;
-      }
+      // if (updatedFormData.username === currentUser.username) {
+      //   delete updatedFormData.username;
+      // }
+      // if (updatedFormData.email === currentUser.email) {
+      //   delete updatedFormData.email;
+      // }
+      // if (updatedFormData.password === '' || formData.password === currentUser.password) {
+      //   delete updatedFormData.password;
+      // }
+      // if (updatedFormData.avatar === currentUser.avatar) {
+      //   delete updatedFormData.avatar;
+      // }
 
       const res = await fetch(`/api/user/update/${currentUser._id}`,
         {
@@ -190,7 +194,7 @@ const Profile = () => {
       <h1 className='text-3xl font font-semibold text-center mt-8'>Profile</h1>
 
       <div className='flex flex-col gap-4 mt-4'>
-        <img src={newAvatar ? URL.createObjectURL(newAvatar) : currentUser.avatar} onClick={() => fileRef.current.click()} alt="avatar" className='rounded-full h-24 w-24 object-cover cursor-pointer self-center mt-2' />
+        <img src={newAvatar ? URL.createObjectURL(newAvatar) : formData.avatar} onClick={() => fileRef.current.click()} alt="avatar" className='rounded-full h-24 w-24 object-cover cursor-pointer self-center mt-2' />
         <input type='file' ref={fileRef} onChange={(f) => setNewAvatar(f.target.files[0])} accept='image/*' />
       </div>
 

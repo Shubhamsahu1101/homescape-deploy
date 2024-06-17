@@ -8,6 +8,7 @@ const Home = () => {
       {/* Hero Section */}
       <section className="relative bg-cover bg-center h-screen" style={{ backgroundImage: `url(${homeimage})` }}>
         <div className="absolute inset-0 bg-black opacity-50"></div>
+        <div className='text-white font-semibold mb-4 relative'>!! Static client only version hosted on github pages. Complete code on Github. Please reload only on the home page. !!</div>
         <div className="relative z-10 flex flex-col items-center justify-center h-full text-center text-white">
           <h1 className="text-6xl font-bold mb-4">Your Dream Home Awaits</h1>
           <p className="text-lg mb-6">Find, buy, or rent properties effortlessly</p>
