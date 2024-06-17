@@ -37,7 +37,7 @@ const Header = () => {
                             About
                         </li>
                     </Link>
-                    <Link to='/profile'>
+                    <Link to='/homescape-deploy/profile'>
                         {currentUser ? (
                             <img
                                 className='rounded-full h-12 w-12 object-cover mr-3'
