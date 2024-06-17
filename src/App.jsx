@@ -30,7 +30,7 @@ const App = () => {
         <Route path="/homescape-deploy/profile" element={<Profile />} />
         
         <Route element={<PrivateRoute />} >
-          <Route path="/update-listing/:listingId" element={<UpdateListing />} />
+          <Route path="/homescape-deploy/update-listing/:listingId" element={<UpdateListing />} />
         </Route>
 
         <Route path="/homescape-deploy/listing/:listingId" element={<Listing />} />
