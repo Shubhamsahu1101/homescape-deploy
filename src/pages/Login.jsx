@@ -63,7 +63,7 @@ const Login = () => {
       </form>
       <div className='flex justify-center text-center mt-5'>
         <p>New user?</p>
-        <Link to='/signup' className='ml-1 text-blue-700'>Signup</Link>
+        <Link to='/homescape-deploy/signup' className='ml-1 text-blue-700'>Signup</Link>
       </div>
     </div>
   )

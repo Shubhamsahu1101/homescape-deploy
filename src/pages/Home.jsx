@@ -13,10 +13,10 @@ const Home = () => {
           <h1 className="text-6xl font-bold mb-4">Your Dream Home Awaits</h1>
           <p className="text-lg mb-6">Find, buy, or rent properties effortlessly</p>
           <div className="flex gap-4">
-            <Link to="/search" className="bg-blue-500 text-white text-xl py-2 px-4 rounded hover:bg-blue-600 transition">
+            <Link to="/homescape-deploy/search" className="bg-blue-500 text-white text-xl py-2 px-4 rounded hover:bg-blue-600 transition">
               View Listings
             </Link>
-            <Link to="/create-listing" className="bg-green-500 text-white text-xl py-2 px-4 rounded hover:bg-green-600 transition">
+            <Link to="/homescape-deploy/create-listing" className="bg-green-500 text-white text-xl py-2 px-4 rounded hover:bg-green-600 transition">
               Create Listing
             </Link>
           </div>

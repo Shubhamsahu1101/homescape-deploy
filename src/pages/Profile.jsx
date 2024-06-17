@@ -210,7 +210,7 @@ const Profile = () => {
       <hr className='border-t-2 border-gray-300 my-8' />
 
       <div className='flex gap-4 mt-4'>
-        <Link to='/my-listings' className='bg-green-600 flex flex-1 text-white p-3 rounded-lg hover:opacity-95 justify-center' >
+        <Link to='/homescape-deploy/my-listings' className='bg-green-600 flex flex-1 text-white p-3 rounded-lg hover:opacity-95 justify-center' >
           <button disabled={loading} >My Listings</button>
         </Link>
         <button disabled={loading} onClick={handleLogout} className='bg-red-600 flex-1 text-white p-3 rounded-lg hover:opacity-95'>Logout</button>

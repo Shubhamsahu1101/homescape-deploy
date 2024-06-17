@@ -116,7 +116,7 @@ const MyListings = () => {
             </h1>
             {userListings.map((listing) => (
                 <div key={listing._id} className='flex gap-2 items-center'>
-                    <Link to={`/listing/${listing._id}`} className='hover:opacity-95 bg-stone-100 border rounded-lg p-3 flex flex-auto justify-between items-center gap-4'>
+                    <Link to={`/homescape-deploy/listing/${listing._id}`} className='hover:opacity-95 bg-stone-100 border rounded-lg p-3 flex flex-auto justify-between items-center gap-4'>
 
                         <img src={listing.imageUrls[0]} alt='listing cover' className='h-20 object-contain rounded-md' />
 
@@ -126,7 +126,7 @@ const MyListings = () => {
 
                     </Link>
                     <div className='flex flex-col gap-2'>
-                        <Link to={`/update-listing/${listing._id}`} className='hover:opacity-95 bg-green-600 w-32 border rounded-lg p-3 flex justify-center items-center gap-4' >
+                        <Link to={`/homescape-deploy/update-listing/${listing._id}`} className='hover:opacity-95 bg-green-600 w-32 border rounded-lg p-3 flex justify-center items-center gap-4' >
                             <p className='text-white'>UPDATE</p>
                         </Link>
                         <div onClick={() => handleListingDelete(listing._id)} className='hover:opacity-95 bg-red-600 w-32 border rounded-lg p-3 flex justify-center items-center gap-4' >
