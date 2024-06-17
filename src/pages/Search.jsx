@@ -147,7 +147,7 @@ export default function Search() {
         urlParams.set('sort', sidebardata.sort);
         urlParams.set('order', sidebardata.order);
         const searchQuery = urlParams.toString();
-        navigate(`/search?${searchQuery}`);
+        navigate(`/homescape-deploy/search?${searchQuery}`);
     };
 
     const onShowMoreClick = async () => {

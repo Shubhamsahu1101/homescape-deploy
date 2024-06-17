@@ -115,7 +115,7 @@ const Profile = () => {
       else {
         toast.success('User updated successfully');
         dispatch(userUpdated(data));
-        navigate('/profile');
+        navigate('/homescape-deploy/profile');
       }
 
     } catch (error) {

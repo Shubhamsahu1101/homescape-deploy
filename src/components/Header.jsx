@@ -17,12 +17,12 @@ const Header = () => {
                 </Link>
                 
                 <ul className='flex items-center gap-6'>
-                    <Link to='/search'>
+                    <Link to='/homescape-deploy/search'>
                         <li className='hidden sm:inline text-stone-700 hover:opacity-75 font-semibold text-xl'>
                             View Listings
                         </li>
                     </Link>
-                    <Link to='/create-listing'>
+                    <Link to='/homescape-deploy/create-listing'>
                         <li className='hidden sm:inline text-stone-700 hover:opacity-75 font-semibold text-xl'>
                             Create Listing
                         </li>
@@ -32,7 +32,7 @@ const Header = () => {
                             Home
                         </li>
                     </Link>
-                    <Link to='/about'>
+                    <Link to='/homescape-deploy/about'>
                         <li className='hidden sm:inline text-stone-700 hover:opacity-75 font-semibold text-xl'>
                             About
                         </li>

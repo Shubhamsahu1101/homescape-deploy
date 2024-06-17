@@ -80,7 +80,7 @@ const CreateListing = () => {
       if (data.message) {
         toast.error(data.message);
       }
-      else navigate(`/listing/${data._id}`);
+      else navigate(`/homescape-deploy/listing/${data._id}`);
 
     } catch (error) {
       console.log(error.message);

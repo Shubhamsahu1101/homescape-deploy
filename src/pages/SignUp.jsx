@@ -34,7 +34,7 @@ const SignUp = () => {
       }
       else {
         toast.success('Account created successfully');
-        navigate('/login');
+        navigate('/homescape-deploy/login');
       }
 
     } catch (error) {

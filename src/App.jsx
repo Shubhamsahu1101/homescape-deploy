@@ -21,19 +21,19 @@ const App = () => {
       <Toaster />
       <Routes>
         <Route path="/homescape-deploy" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/signup" element={<SignUp />} />
-        <Route path="/login" element={<Login />} />
-        <Route path='/search' element={<Search />} />
-        <Route path="/create-listing" element={<CreateListing />} />
-        <Route path="/my-listings" element={<MyListings />} />
-        <Route path="/profile" element={<Profile />} />
+        <Route path="/homescape-deploy/about" element={<About />} />
+        <Route path="/homescape-deploy/signup" element={<SignUp />} />
+        <Route path="/homescape-deploy/login" element={<Login />} />
+        <Route path='/homescape-deploy/search' element={<Search />} />
+        <Route path="/homescape-deploy/create-listing" element={<CreateListing />} />
+        <Route path="/homescape-deploy/my-listings" element={<MyListings />} />
+        <Route path="/homescape-deploy/profile" element={<Profile />} />
         
         <Route element={<PrivateRoute />} >
           <Route path="/update-listing/:listingId" element={<UpdateListing />} />
         </Route>
 
-        <Route path="/listing/:listingId" element={<Listing />} />
+        <Route path="/homescape-deploy/listing/:listingId" element={<Listing />} />
 
       </Routes>
     </div>

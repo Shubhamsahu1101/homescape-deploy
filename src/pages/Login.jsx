@@ -40,7 +40,7 @@ const Login = () => {
       else {
         toast.success('Logged in successfully');
         dispatchEvent(userLoggedIn(data));
-        navigate('/');
+        navigate('/homescape-deploy/');
       }
 
     } catch (error) {
